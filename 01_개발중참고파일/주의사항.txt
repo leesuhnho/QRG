@@ -1,0 +1,8 @@
+When modifying code, don’t try to apply one large patch all at once, as it may fail. Patch the files one at a time instead.
+
+When starting development work, add new files where it makes sense. Prioritize maintainability and extensibility, but don’t split things into too many files unnecessarily. Keep the structure well-balanced and practical.
+You can also add more folders. If needed during development, feel free to create additional folders and continue working
+
+
+
+If something cannot be done because the current permissions are restricted, don’t give up. Ask me to grant or elevate the required permissions, then continue the work.

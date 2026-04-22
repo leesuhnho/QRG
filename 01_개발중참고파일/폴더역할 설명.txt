@@ -1,0 +1,63 @@
+.github/workflows: Folder for the CI/CD pipeline.
+
+apps/api: Backend application. Contains the actual server code.
+
+apps/api/src/common: Global shared elements. This includes error handling, middleware, guards, utilities, and validation logic.
+
+apps/api/src/modules: Grouped features by domain. It is pre-divided into auth, users, route-planning, quiet-score, place-search, crowd-sensing, bookmarks, regions, and health.
+
+apps/api/src/modules/*/application: Use cases and service flows.
+
+apps/api/src/modules/*/domain: Core business rules.
+
+apps/api/src/modules/*/infrastructure: Database, external APIs, and repository implementations.
+
+apps/api/src/modules/*/interfaces: External-facing layer such as routers, controllers, and DTOs.
+
+apps/api/src/integrations: Dedicated folder for external integrations such as maps, public transit, geocoding, and analytics tools.
+
+apps/api/src/database: For database management such as migrations, seeders, and factories.
+
+apps/api/src/jobs: For asynchronous jobs such as batch processing, synchronization, and score calculation.
+
+apps/api/tests: Backend tests. Organized into unit, integration, e2e, and fixtures.
+
+apps/web: Frontend application.
+
+apps/web/src/app: App entry point, routing, and global configuration area.
+
+apps/web/src/pages: Page-level folders.
+
+apps/web/src/widgets: Screen blocks composed of multiple features.
+
+apps/web/src/features: User action–oriented features. It already includes destination-search, route-options, quiet-map, place-overview, onboarding, profile-settings, and bookmarks.
+
+apps/web/src/entities: Reusable domain-based models such as route, place, user, and crowd.
+
+apps/web/src/shared: A layer for shared UI, API clients, hooks, styles, types, and utilities.
+
+apps/web/public: Static assets such as icons, images, and fonts.
+
+apps/web/tests: Frontend tests.
+
+packages: Shared packages across applications. It is divided into api-client, contracts, core, geo, ui, utils, and config.
+
+packages/contracts: Shared API schemas, events, and contract definitions between frontend and backend.
+
+packages/core: Business-centered shared code such as common constants, types, and value objects.
+
+packages/geo: For geographic operations such as coordinate calculations, distance calculations, and helper logic for quiet-route scoring.
+
+packages/ui: For shared UI components.
+
+packages/config: For shared ESLint, Prettier, TypeScript, and test configurations.
+
+infrastructure: Folder for operational environment–related resources such as Docker, reverse proxy, monitoring, and CI.
+
+docs: Place for organizing architecture, ADRs, API docs, planning, and operations documents.
+
+scripts: For installation, database, data processing, and release automation scripts.
+
+data: Place to separate raw Seoul-area data, processed data, and seed data.
+
+tests: For app-wide contract tests, performance tests, and smoke tests.
